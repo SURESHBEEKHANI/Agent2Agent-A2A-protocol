@@ -1,0 +1,27 @@
+# ============================================================
+# a2a-project – requirements for elon_agent, jeff_agent, mark_agent
+# ============================================================
+# Generated from pyproject.toml and agent folder imports.
+# Python: >=3.13 (root) / >=3.11 (mark_agent)
+# ============================================================
+
+# ---- Root project (pyproject.toml) ----
+crewai>=1.6.1
+google-adk>=1.25.0
+langchain>=1.2.10
+langchain-groq>=1.1.2
+litellm>=1.81.13
+nest-asyncio>=1.6.0
+
+# ---- A2A & server (elon_agent, jeff_agent, mark_agent) ----
+a2a-sdk>=0.3.11
+httpx>=0.27.0
+python-dotenv>=1.2.1
+uvicorn>=0.30.0
+
+# ---- Jeff agent (LangGraph) ----
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# ---- Mark agent (CrewAI + Gemini) ----
+crewai[google-genai]>=1.4.1
